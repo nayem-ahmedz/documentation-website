@@ -1,0 +1,26 @@
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+body{
+    display: flex; font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header and Nav */
+header{
+    border: 1px solid #aaa; min-height: 100vh;
+}
+header > h1{
+    padding: 20px 15px; font-weight: 500; border-bottom: 1px solid #aaa;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li a:link, nav ul li a:visited{
+    text-decoration: none; display: block; padding: 15px; color: black; font-weight: 500;
+    /* border-style: solid none solid none; border-width: 2px; border-color: red; */
+    border-bottom: 1px solid #aaa;
+}
+nav ul li a:hover{
+    background-color: #aaa; transition: 0.3s ease-in;
+}
+
