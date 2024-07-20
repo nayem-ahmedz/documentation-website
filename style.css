@@ -3,14 +3,16 @@
 }
 body{
     display: flex; font-family: Arial, Helvetica, sans-serif;
+    /* For smooth scroll */
+    scroll-behavior: smooth;
 }
 
 /* Header and Nav */
 header{
-    border: 1px solid #aaa; min-height: 100vh;
+    border: 1px solid #bbb; min-height: 100vh;
 }
 header > h1{
-    padding: 20px 15px; font-weight: 500; border-bottom: 1px solid #aaa;
+    padding: 20px 15px; font-weight: 500; border-bottom: 1px solid #ccc;
 }
 nav ul{
     list-style-type: none;
@@ -18,9 +20,54 @@ nav ul{
 nav ul li a:link, nav ul li a:visited{
     text-decoration: none; display: block; padding: 15px; color: black; font-weight: 500;
     /* border-style: solid none solid none; border-width: 2px; border-color: red; */
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid #ccc;
 }
 nav ul li a:hover{
-    background-color: #aaa; transition: 0.3s ease-in;
+    background-color: #ccc; transition: 0.3s ease-in;
 }
 
+/* Main Section */
+main{
+    padding: 30px 40px;
+}
+section{
+    margin-bottom: 30px;
+}
+section > h2{
+    padding: 15px 0; border-bottom: 1px solid #ccc; margin-bottom: 20px; color: rgba(0,0,0, 0.75);
+}
+section > h2::first-letter{
+    font-size: 2rem;
+}
+article{
+    display: flex; flex-direction: column; gap: 20px;
+}
+article > ul{
+    margin-left: 40px;
+}
+article > ul li{
+    margin: 8px auto;
+}
+
+/* coderun ul custom style */
+.coderun-ul{
+    list-style-type: none; margin-left: 30px;
+}
+.coderun-ul li::before{
+    content: "-) ";
+}
+
+/* first code */
+code{
+    white-space: pre-line; line-height: 2; padding: 0 30px 20px; background-color: #eee; color: blue;
+}
+
+
+@media screen and (max-width: 700px){
+    body{
+        flex-direction: column;
+    }
+    header{
+        min-height: auto;
+    }
+}
