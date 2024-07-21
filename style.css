@@ -7,7 +7,7 @@ body{
     scroll-behavior: smooth;
 }
 
-/* Header and Nav */
+/* Header and Nav :: Fixed on left */
 header{
     border: 1px solid #bbb; min-height: 100vh; position: fixed; top: 0;
 }
@@ -26,7 +26,7 @@ nav ul li a:hover{
     background-color: #ccc; transition: 0.3s ease-in;
 }
 
-/* Main Section */
+/* Main Section :: Started with 320px left-margin */
 main{
     padding: 30px 40px; margin-left: 320px;
 }
@@ -63,6 +63,7 @@ code{
 }
 
 
+/* Media Query :: header is sticky, scrollbar, removed main- left-margin and some padding */
 @media screen and (max-width: 700px){
     header{
         min-height: auto; position: sticky; background-color: whitesmoke; height: 175px; overflow: auto; box-shadow: 0 0 8px gray;
