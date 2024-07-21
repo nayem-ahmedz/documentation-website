@@ -2,14 +2,14 @@
     padding: 0; margin: 0; box-sizing: border-box;
 }
 body{
-    display: flex; font-family: Arial, Helvetica, sans-serif;
-    /* For smooth scroll */
+    font-family: Arial, Helvetica, sans-serif;
+    /* For smooth scroll ? dont work why? find internet frst :: Quota Movement 2024 */
     scroll-behavior: smooth;
 }
 
 /* Header and Nav */
 header{
-    border: 1px solid #bbb; min-height: 100vh;
+    border: 1px solid #bbb; min-height: 100vh; position: fixed; top: 0;
 }
 header > h1{
     padding: 20px 15px; font-weight: 500; border-bottom: 1px solid #ccc;
@@ -28,7 +28,7 @@ nav ul li a:hover{
 
 /* Main Section */
 main{
-    padding: 30px 40px;
+    padding: 30px 40px; margin-left: 320px;
 }
 section{
     margin-bottom: 30px;
@@ -64,10 +64,10 @@ code{
 
 
 @media screen and (max-width: 700px){
-    body{
-        flex-direction: column;
-    }
     header{
-        min-height: auto;
+        min-height: auto; position: sticky; background-color: whitesmoke; height: 175px; overflow: auto; box-shadow: 0 0 8px gray;
+    }
+    main{
+        margin-left: auto; padding-left: 20px;
     }
 }
